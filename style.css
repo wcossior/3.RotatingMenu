@@ -32,3 +32,21 @@ h1 {
     width: 100%;
 }
 
+.containerMenu{
+    position: fixed;
+    transform: translate(-70%,-75%);
+    background-color: #FF7979;
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+}
+
+.open{
+    background: none;
+    border: none;
+    position: fixed;
+    color: #fafafa;
+    transform: translate(100px,110px);
+    cursor: pointer;
+    font-size: 25px;
+}

@@ -42,10 +42,13 @@ h1 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    transition: transform 0.8s linear;
+    transition: transform 0.5s linear;
 }
 
-.rotateMenu{
+.container.rotateMenu{
+    transform: rotate(-20deg);
+}
+.container.rotateMenu .containerMenu{
     transform: rotate(-70deg);
 }
 

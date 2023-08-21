@@ -17,6 +17,8 @@ body {
     width: 100vw;
     min-height: 100vh;
     padding: 50px;
+    transition: transform 0.8s ease;
+    transform-origin: top left;
 }
 
 .content {
@@ -34,11 +36,13 @@ h1 {
 
 .containerMenu{
     position: fixed;
-    transform: translate(-70%,-75%);
+    left: -100px;
+    top: -100px;
     background-color: #FF7979;
-    width: 180px;
-    height: 180px;
-    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.8s ease;
 }
 
 .open{
@@ -46,7 +50,33 @@ h1 {
     border: none;
     position: fixed;
     color: #fafafa;
-    transform: translate(100px,110px);
+    transform: translate(120px,130px);
     cursor: pointer;
     font-size: 25px;
+}
+.close{
+    background: none;
+    border: none;
+    position: fixed;
+    color: #fafafa;
+    transform: translate(40px,120px);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+nav{
+    position: absolute;
+    /* left: 0; */
+    /* top: 0px; */
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a{
+    /* padding-left: 20px; */
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
 }

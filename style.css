@@ -34,7 +34,7 @@ h1 {
     width: 100%;
 }
 
-.containerMenu{
+.containerMenu {
     position: fixed;
     left: -100px;
     top: -100px;
@@ -42,60 +42,66 @@ h1 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    transition: transform 0.8s ease;
+    transition: transform 0.8s linear;
 }
 
-.open{
+.rotateMenu{
+    transform: rotate(-70deg);
+}
+
+.open {
     background: none;
     border: none;
     position: fixed;
     color: #fafafa;
-    transform: translate(120px,130px);
-    cursor: pointer;
-    font-size: 25px;
-}
-.close{
-    background: none;
-    border: none;
-    position: fixed;
-    color: #fafafa;
-    transform: translate(40px,120px);
+    transform: translate(120px, 130px);
     cursor: pointer;
     font-size: 25px;
 }
 
-nav{
+.close {
+    background: none;
+    border: none;
+    position: fixed;
+    color: #fafafa;
+    transform: translate(40px, 120px);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+nav {
     position: fixed;
     left: -250px;
     bottom: 50px;
-    transition: all 0.5s;
+    background-color: aquamarine;
+    transition: left 0.5s ease-in 0.3s;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-li{
+li {
     margin-bottom: 40px;
-    transition: left 0.5s ease-in;
 }
 
-li .fa-user-alt{
+li .fa-user-alt {
     margin-left: 20px;
 }
 
-li .fa-envelope{
+li .fa-envelope {
     margin-left: 40px;
 }
 
-li a{
+li a {
     padding-left: 20px;
     text-decoration: none;
     font-weight: 600;
     color: #222;
     color: #fafafa;
 }
-li i{
+
+li i {
     font-size: 22px;
     color: #fafafa;
 }
